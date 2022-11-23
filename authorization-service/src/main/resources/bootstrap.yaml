@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: authorization-service
+  cloud:
+    config:
+      enabled: true
+      fail-fast: true
+      retry:
+        maxAttempts: 200
+        maxIntervals: 10000
+      uri: http://localhost:8081/
